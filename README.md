@@ -1,15 +1,21 @@
-# Apophis Simulation
+# Apophis Simulation: Numerical Study of the 2029 Earth Close Encounter
 
-<p align="center">
-  <img src="images/aph_sun_center.png" alt="Sun-centered Apophis trajectory" width="430">
-  <img src="images/aph_earth_center.png" alt="Earth-centered Apophis close encounter" width="430">
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
-  <img src="https://img.shields.io/badge/python-3.12-blue.svg" alt="Python 3.12">
-  <img src="https://img.shields.io/badge/status-active-brightgreen.svg" alt="Project status: active">
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img
+        src="images/aph_sun_center.png"
+        alt="Sun-centered Apophis trajectory"
+      >
+    </td>
+    <td align="center">
+      <img
+        src="images/aph_earth_center.png"
+        alt="Earth-centered Apophis close encounter"
+      >
+    </td>
+  </tr>
+</table>
 
 `apophis-sim` is a research-oriented Python package for studying the 2029 close encounter of asteroid **(99942) Apophis**. It combines N-body propagation, orbital-element analysis, two-body utilities, patched-conics diagnostics, and interactive 3D visualizations.
 
