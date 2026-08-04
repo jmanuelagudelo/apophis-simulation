@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apophis-sim"
+version = "0.1.0"
+description = "Numerical and analytical tools for studying the 2029 Apophis Earth encounter."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "J. Manuel Agudelo R."}]
+classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Science/Research", "Topic :: Scientific/Engineering :: Astronomy", "Programming Language :: Python :: 3"]
+dependencies = ["numpy>=1.24", "plotly>=5.18"]
+
+[project.optional-dependencies]
+rebound = ["rebound>=5.0,<5.1", "pymcel>=0.1"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.urls]
+Repository = "https://github.com/jmanuelagudelo/apophis-simulation"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/apophis_sim"]
